@@ -1,66 +1,100 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 62.5%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
-.content{
-    /* background-color: red; */
-    height: 50rem;
-    width: 50rem;
-    border-radius: 9px;
-    margin: 10rem auto;
-    overflow: hidden;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+.content {
+  height: 50rem;
+  width: 50rem;
+  border-radius: 9px;
+  margin: 8rem auto 3rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 
-.results-display{
-    /* background-color: blue; */
-    height: 85%;
-    width: 100%;
-    color: #444;
-    font-size: 4rem;
-    /* border-bottom: solid 2px #555; */
+.results-display {
+  height: 85%;
+  width: 100%;
+  color: #444;
+  font-size: 4rem;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.amount-display{
-    /* background-color: aqua; */
-    height: 7.5%;
-    width: 100%;
-    font-size: 2rem;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.amount-display {
+  height: 7.5%;
+  width: 100%;
+  font-size: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.dies{
-    background-color: black;
-    height: 7.5%;
+.dies {
+  background-color: black;
+  height: 7.5%;
 
-    display: flex;
-    justify-content: center;
-    /* gap: 1rem; */
+  display: flex;
+  justify-content: center;
 }
 
-.btn{
-    background-color: #777;
-    border: none;
-    color: white;
-    font-size: 2rem;
-    /* padding: .8rem 1.2rem; */
-    width: 100%;
-    transition: all 0.5s;
+.btn {
+  background-color: #777;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  flex: auto;
+  transition: all 0.5s;
 }
 
-.btn:hover{
-    background-color: #555;
+.btn:hover {
+  background-color: #555;
+}
+
+.action-btns {
+  /* background-color: black; */
+  width: 50rem;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.btn-large {
+  font-size: 1.5rem;
+  padding: 1rem 3.2rem;
+  border-radius: 5px;
+  background: none;
+  border: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  transition: all 0.2s;
+}
+
+.btn-large:hover {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.2);
+}
+
+.btn-large:active {
+  transform: translateY(0.2rem);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
+}
+
+.roll {
+  background-color: #bf0603;
+  color: #fff;
+}
+
+.clear {
+  background-color: #fff;
+  color: #000;
 }
