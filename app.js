@@ -2,6 +2,7 @@ const dies = document.querySelector(".dies");
 const amountDisplay = document.querySelector(".amount-display");
 const resultsDisplay = document.querySelector(".results-display");
 const btnRoll = document.querySelector(".roll");
+const btnClear = document.querySelector(".clear");
 
 const diceAmount = { 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 20: 0, 100: 0 };
 const diceReady = [];
@@ -32,4 +33,15 @@ btnRoll.addEventListener("click", () => {
 
   resultsDisplay.innerHTML = "";
   resultsDisplay.innerHTML = `${result}`;
+});
+
+btnClear.addEventListener("click", (event) => {
+  diceReady.length = 0;
+
+  for (let dice in diceAmount) {
+    diceAmount[dice] = 0;
+  }
+
+  amountDisplay.innerHTML = "";
+  resultsDisplay.innerHTML = "Select Your Dice";
 });
