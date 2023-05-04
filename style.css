@@ -5,11 +5,23 @@
   font-size: 62.5%;
 }
 
-.content {
+.container {
   height: 50rem;
   width: 50rem;
-  border-radius: 9px;
   margin: 8rem auto 3rem;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  gap: 2rem;
+}
+
+.content {
+  height: 70%;
+  width: 70%;
+  border-radius: 9px;
   overflow: hidden;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 
@@ -39,20 +51,51 @@
 }
 
 .dies {
-  background-color: black;
-  height: 7.5%;
+  height: 100%;
 
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: end;
+  gap: 1rem;
 }
 
-.btn {
+.btn,
+.dice-menu-btn {
+  height: 4.5rem;
+  width: 4.5rem;
   background-color: #777;
+  border-radius: 50%;
   border: none;
   color: white;
   font-size: 2rem;
-  flex: auto;
   transition: all 0.5s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-corner {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.dice-menu-btn {
+  z-index: 100;
+}
+
+.hidden {
+  display: none;
+  z-index: -1;
+}
+
+.close-icon {
+  transform: rotate(45deg);
+}
+
+.expand {
+  transform: translateY(-125%);
 }
 
 .btn:hover {
